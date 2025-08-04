@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import LoadingScreen from './components/LoadingScreen';
 import ScrollToTop from './components/ScrollToTop';
 import ThemeToggle from './components/ThemeToggle';
-import CustomCursor from './components/CustomCursor';
+
 import NavigationProgress from './components/NavigationProgress';
 
 export default function App() {
