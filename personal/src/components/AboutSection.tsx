@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Card, CardContent } from './ui/card';
-import { Separator } from './ui/separator';
 import { 
   Rocket, 
   Briefcase, 
@@ -41,14 +40,12 @@ export default function AboutSection() {
     }
   };
 
-  const floatVariants = {
-    animate: {
-      y: [-5, 5, -5],
-      transition: {
-        duration: 3,
-        repeat: Infinity,
-        ease: "easeInOut"
-      }
+  const floatAnimation = {
+    y: [-5, 5, -5],
+    transition: {
+      duration: 3,
+      repeat: Infinity,
+      ease: "easeInOut" as const
     }
   };
 
@@ -128,14 +125,19 @@ export default function AboutSection() {
       {/* Background decorative elements */}
       <motion.div
         className="absolute top-20 right-10 w-32 h-32 bg-gradient-to-r from-cyan-300/10 to-blue-300/10 rounded-full blur-3xl"
-        variants={floatVariants}
-        animate="animate"
+        animate={floatAnimation}
       />
       <motion.div
         className="absolute bottom-40 left-10 w-24 h-24 bg-gradient-to-r from-emerald-300/10 to-cyan-300/10 rounded-full blur-2xl"
-        variants={floatVariants}
-        animate="animate"
-        transition={{ delay: 1 }}
+        animate={{
+          y: [-5, 5, -5],
+          transition: {
+            duration: 3,
+            repeat: Infinity,
+            ease: "easeInOut" as const,
+            delay: 1
+          }
+        }}
       />
 
       <motion.div 
