@@ -114,8 +114,7 @@ export default function App() {
 
       {!isLoading && (
         <>
-          {/* Custom Cursor */}
-          <CustomCursor />
+
 
           {/* Enhanced Animated Background */}
           <div className="fixed inset-0 -z-10">
