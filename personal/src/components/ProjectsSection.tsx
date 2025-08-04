@@ -1,16 +1,13 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardContent } from './ui/card';
-import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { 
   ExternalLink, 
   Github, 
-  Calendar, 
-  Users, 
+  Users,
   Award,
-  Filter,
   Eye,
   Star,
   Clock,
@@ -22,7 +19,7 @@ import {
 
 export default function ProjectsSection() {
   const [selectedCategory, setSelectedCategory] = useState('all');
-  const [selectedProject, setSelectedProject] = useState<number | null>(null);
+  // const [selectedProject, setSelectedProject] = useState<number | null>(null);
 
   const containerVariants = {
     hidden: { opacity: 0 },

@@ -3,22 +3,16 @@ import { motion } from 'framer-motion';
 import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { Progress } from './ui/progress';
-import { 
-  Code2, 
-  Database, 
-  Globe, 
-  Palette, 
-  Wrench, 
-  Cloud,
-  Smartphone,
-  Shield,
-  GitBranch,
+import {
+  Code2,
+  Database,
+  Globe,
+  Palette,
+  Wrench,
   Zap,
-  BookOpen,
   Award,
   Calendar,
   MapPin,
-  Briefcase,
   ExternalLink
 } from 'lucide-react';
 

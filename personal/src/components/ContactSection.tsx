@@ -6,22 +6,20 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
 import { Badge } from './ui/badge';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Clock, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
   Send,
   CheckCircle,
-  Linkedin, 
-  Github, 
+  Linkedin,
+  Github,
   Twitter,
   Globe,
   Calendar,
   MessageSquare,
   Coffee,
-  Video,
-  Download,
   Star
 } from 'lucide-react';
 
