@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Separator } from './ui/separator';
-import { Linkedin, Github, Twitter, Mail } from 'lucide-react';
+import { Linkedin, Github, Twitter, Mail, Phone, Globe } from 'lucide-react';
 
 interface FooterProps {
   activeSection: string;
@@ -145,7 +145,7 @@ export default function Footer({ activeSection, onSectionChange }: FooterProps) 
                 className="flex items-center space-x-3"
                 whileHover={{ x: 5 }}
               >
-                <span className="text-lg">📧</span>
+                <Mail className="w-5 h-5 text-cyan-400" />
                 <a 
                   href="mailto:kabogere.salimu@email.com"
                   className="text-muted-foreground hover:text-cyan-400 transition-colors"
@@ -157,7 +157,7 @@ export default function Footer({ activeSection, onSectionChange }: FooterProps) 
                 className="flex items-center space-x-3"
                 whileHover={{ x: 5 }}
               >
-                <span className="text-lg">📱</span>
+                <Phone className="w-5 h-5 text-cyan-400" />
                 <a 
                   href="tel:+256123456789"
                   className="text-muted-foreground hover:text-cyan-400 transition-colors"
@@ -169,7 +169,7 @@ export default function Footer({ activeSection, onSectionChange }: FooterProps) 
                 className="flex items-center space-x-3"
                 whileHover={{ x: 5 }}
               >
-                <span className="text-lg">🌍</span>
+                <Globe className="w-5 h-5 text-cyan-400" />
                 <span className="text-muted-foreground">
                   Available Worldwide
                 </span>

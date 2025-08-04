@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Button } from './ui/button';
 // Replace this path with your actual profile image path
 // Example: '/images/profile.jpg' or '/assets/profile.png'
-const profileImage = '/images/profile.jpg';
+const profileImage = '/images/profile.png';
 
 interface HeroSectionProps {
   onNavigate: (section: string) => void;
