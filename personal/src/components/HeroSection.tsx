@@ -118,9 +118,9 @@ export default function HeroSection({ onNavigate }: HeroSectionProps) {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button 
+            <Button
               onClick={() => onNavigate('projects')}
-              className="px-8 py-4 text-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 border-0 glow-hover"
+              className="px-8 py-4 text-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 border-0 glow-hover text-white"
             >
               View My Work
             </Button>
