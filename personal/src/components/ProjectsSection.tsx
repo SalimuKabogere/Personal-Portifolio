@@ -354,8 +354,6 @@ export default function ProjectsSection() {
                 variants={itemVariants}
                 whileHover={{ y: -10, scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                onClick={() => setSelectedProject(project.id)}
-                className="cursor-pointer"
               >
                 <Card className="glass border border-white/20 overflow-hidden group h-full">
                   <div className="relative overflow-hidden">
