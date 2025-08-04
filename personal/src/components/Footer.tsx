@@ -141,35 +141,41 @@ export default function Footer({ activeSection, onSectionChange }: FooterProps) 
           <motion.div variants={itemVariants}>
             <h4 className="mb-6 gradient-text">Get In Touch</h4>
             <div className="space-y-4">
-              <motion.div 
+              <motion.div
                 className="flex items-center space-x-3"
                 whileHover={{ x: 5 }}
               >
-                <Mail className="w-5 h-5 text-cyan-400" />
-                <a 
+                <div className="w-8 h-8 glass rounded-full flex items-center justify-center">
+                  <Mail className="w-4 h-4 text-cyan-400" />
+                </div>
+                <a
                   href="mailto:kabogere.salimu@email.com"
                   className="text-muted-foreground hover:text-cyan-400 transition-colors"
                 >
                   kabogere.salimu@email.com
                 </a>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="flex items-center space-x-3"
                 whileHover={{ x: 5 }}
               >
-                <Phone className="w-5 h-5 text-cyan-400" />
-                <a 
+                <div className="w-8 h-8 glass rounded-full flex items-center justify-center">
+                  <Phone className="w-4 h-4 text-cyan-400" />
+                </div>
+                <a
                   href="tel:+256123456789"
                   className="text-muted-foreground hover:text-cyan-400 transition-colors"
                 >
                   +256 (0) 123-456789
                 </a>
               </motion.div>
-              <motion.div 
+              <motion.div
                 className="flex items-center space-x-3"
                 whileHover={{ x: 5 }}
               >
-                <Globe className="w-5 h-5 text-cyan-400" />
+                <div className="w-8 h-8 glass rounded-full flex items-center justify-center">
+                  <Globe className="w-4 h-4 text-cyan-400" />
+                </div>
                 <span className="text-muted-foreground">
                   Available Worldwide
                 </span>
