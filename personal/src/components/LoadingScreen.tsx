@@ -14,7 +14,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       rotate: 0,
       transition: {
         duration: 1.2,
-        ease: "easeOut"
+        ease: "easeOut" as const
       }
     },
     exit: {
@@ -23,7 +23,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       rotate: 180,
       transition: {
         duration: 0.8,
-        ease: "easeIn"
+        ease: "easeIn" as const
       }
     }
   };
@@ -36,7 +36,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       transition: {
         delay: 0.8,
         duration: 0.8,
-        ease: "easeOut"
+        ease: "easeOut" as const
       }
     },
     exit: {
@@ -55,7 +55,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       transition: {
         delay: 1.5,
         duration: 1.8,
-        ease: "easeInOut"
+        ease: "easeInOut" as const
       }
     }
   };
@@ -68,7 +68,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
       scale: 1.1,
       transition: {
         duration: 0.8,
-        ease: "easeInOut",
+        ease: "easeInOut" as const,
         delay: 0.5
       }
     }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Navigation from './components/Navigation';
 import HeroSection from './components/HeroSection';
@@ -59,7 +59,7 @@ export default function App() {
       scale: 1,
       rotateY: 0,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 300,
         damping: 30,
         duration: 0.8,
@@ -73,7 +73,7 @@ export default function App() {
       scale: 0.95,
       rotateY: direction > 0 ? -10 : 10,
       transition: {
-        type: "spring",
+        type: "spring" as const,
         stiffness: 300,
         damping: 30,
         duration: 0.6
